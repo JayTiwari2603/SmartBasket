@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🛒 SmartBasket (formerly Apna Cart)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SmartBasket is a simple yet dynamic **React-based shopping cart application** that allows users to **add products, manage quantities, remove items, reset the cart, and view the total amount in real time**.  
+This project was built to demonstrate component-based architecture, state management using React hooks, and UI responsiveness with Bootstrap.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+✅ Add new products to cart  
+✅ Update product quantity (+ / –)  
+✅ Remove individual items  
+✅ View total cart value dynamically  
+✅ Reset the entire cart  
+✅ Clean & modular UI with reusable components  
+✅ Real-time UI updates using React hooks  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧩 Component Structure
 
-### `npm test`
+| Component      | Description                                                                 |
+|----------------|----------------------------------------------------------------------------|
+| `Navbar`       | Displays application title or branding                                      |
+| `AddItem`      | Form to add a new product (name & price)                                   |
+| `ProductList`  | Renders a list of added products                                           |
+| `Product`      | Individual product card with quantity controls and remove button           |
+| `Footer`       | Displays total amount & provides Reset / Pay actions                        |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Layer       | Technology Used       |
+|------------|------------------------|
+| Frontend   | React (Create React App) |
+| Styling    | Bootstrap              |
+| State Mgmt | React Hooks (`useState`, `useEffect`) |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project is **frontend-only** and does not use any backend or database.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📁 Folder Structure (Typical CRA Structure)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+SmartBasket/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── AddItem.jsx
+│ │ ├── ProductList.jsx
+│ │ ├── Product.jsx
+│ │ └── Footer.jsx
+│ ├── App.js
+│ ├── index.js
+│ └── App.css (Optional)
+└── package.json
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##ScreenShot 
+<img width="1918" height="922" alt="image" src="https://github.com/user-attachments/assets/30db1b26-7c26-4586-bab2-055c54a99d07" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👨‍💻 Software Developer
+Jayantkumar Tiwari
