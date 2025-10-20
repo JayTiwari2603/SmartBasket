@@ -1,0 +1,68 @@
+/*
+  .App: Main container for the app. Centers all text inside it.
+*/
+.App {
+  text-align: center; /* Center all text inside .App */
+}
+
+/*
+  .App-logo: Styles for the React logo image.
+  - height: 40% of the viewport minimum dimension
+  - pointer-events: none disables mouse events on the logo
+*/
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/*
+  Animation for the logo (spins it) if user prefers motion.
+  - infinite: keeps spinning
+  - 20s linear: one full rotation every 20 seconds
+*/
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/*
+  .App-header: Styles for the header section.
+  - dark background
+  - fills the whole viewport height
+  - uses flexbox to center content vertically and horizontally
+  - font-size scales with screen size
+  - text color is white
+*/
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/*
+  .App-link: Styles for links in the app (e.g., the React website link)
+  - color: bright blue
+*/
+.App-link {
+  color: #61dafb;
+}
+
+/*
+  Keyframes for spinning the logo (used in animation above)
+  - from: start at 0 degrees
+  - to: end at 360 degrees (full rotation)
+*/
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
